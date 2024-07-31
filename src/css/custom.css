@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../static/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../static/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../static/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+:root {
+  --ifm-color-primary: #173ad6;
+  --ifm-color-primary-dark: #0184DE;
+  --ifm-color-primary-darker: #0184DE;
+  --ifm-color-primary-darkest: #0184DE;
+  --ifm-color-primary-light: #0184DE;
+  --ifm-color-primary-lighter: #0184DE;
+  --ifm-color-primary-lightest: #0184DE;
+  --ifm-color-card-background: #F5F5F5;
+  --ifm-color-card-hover: #FFFFFF;
+  --ifm-color-card-border: #DADADA;
+  --ifm-color-card-border-hover: #F7F7F7;
+  --ifm-color-card-shadow: #989898;
+  --ifm-color-black: #000000;
+  --ifm-color-white: #FFFFFF;
+  --ifm-background-color: #F5F5F5;
+  --ifm-color-title: #000000;
+  --ifm-color-description: #7B7775;
+  --ifm-color-text-search-bar: #000;
+  --ifm-color-banner-title: #FFFFFF;
+  --ifm-color-navbar-text: #111A2F;
+  --ifm-color-login-card: #f5f5f5;
+  --ifm-color-footer-button: #0184DE;
+  --ifm-color-background-blog-title: #ffffff00;
+  --ifm-color-background-typewriter: #ffffff00;
+  --ifm-navbar-background-color: #FFFFFF;
+  --ifm-home-background-color: #F5F5F5;
+  --ifm-link-color: #0184DE;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #0184DE;
+  --ifm-color-primary-dark: #0184DE;
+  --ifm-color-primary-darker: #0184DE;
+  --ifm-color-primary-darkest: #0184DE;
+  --ifm-color-primary-light: #0184DE;
+  --ifm-color-primary-lighter: #0184DE;
+  --ifm-color-primary-lightest: #0184DE;
+  --ifm-color-card-background: #3E3E3E;
+  --ifm-color-card-hover: #000000;
+  --ifm-color-card-border: #818181;
+  --ifm-color-card-border-hover: #2D3549;
+  --ifm-color-card-shadow: #6a6a6a;
+  --ifm-color-black: #000000;
+  --ifm-color-title: #ffffff;
+  --ifm-color-description: #FFFFFF;
+  --ifm-color-text-search-bar: #fff;
+  --ifm-color-banner-title: #FFFFFF;
+  --ifm-color-navbar-text: #F9F9F9;
+  --ifm-color-login-card: #f5f5f5;
+  --ifm-color-login-background: #2D3549;
+  --ifm-color-footer-button: #0184DE;
+  --ifm-color-background-blog-title: #ffffff00;
+  --ifm-color-background-typewriter: #ffffff00;
+  --ifm-navbar-background-color: #000000;
+  --ifm-link-color: #0184DE;
+  --ifm-home-background-color: #1B1B1D;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #1B1B1D;
+  --ifm-background-surface-color: #1B1B1D;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins';
+  font-weight: 200;
+}
+
+p, a, li, code {
+  font-family: 'Open Sans';
+  font-size: 14px;
+}
+
+:root { 
+  --doc-sidebar-width: 300px !important;
+}
+
+.homepage {
+  background-image: url("../../static/img/home/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: var(--ifm-color-primary);
+}
+
+.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar-text {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--ifm-color-navbar-text);
+}
+
+:root {
+  --search-local-modal-width: 480px;
+  --search-local-highlight-color: #5468ff;
+}
+
+html[data-theme="dark"] {
+  --search-local-highlight-color: #d23669;
+}

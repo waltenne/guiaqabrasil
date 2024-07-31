@@ -1,0 +1,110 @@
+.space {
+  padding: 1%;
+  background-color: var(--ifm-home-background-color);
+}
+
+.cardHeaderTitle h2{
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 4%;
+}
+
+@media (max-width: 550px) {
+  .cardHeaderTitle h2 {
+    font-size: 25px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s;
+  height: 200px;
+  margin-bottom: 8%;
+}
+
+.cards:hover {
+  transform: scale(1.08);
+}
+
+.cardLink:hover {
+  text-decoration: none;
+}
+
+.cardBody {
+  width: 100%;
+  height: 100%;
+  background-color: var(--ifm-color-card-background);
+  border: 1px solid var(--ifm-color-card-border);
+  border-radius: 6px;
+}
+
+.cards:hover .cardBody {
+  background-color: var(--ifm-color-card-hover);
+  text-decoration: none;
+  color: var(--ifm-color-white);
+}
+
+.cards:hover .cardTitle {
+  font-size: 20px;
+}
+
+.cards:hover .description {
+  color: var(--ifm-color-white);
+}
+
+.cards:hover .cardLink {
+  text-decoration: none;
+  color: var(--ifm-color-black);
+}
+
+.cardTitle {
+  position: relative;
+  font-family: 'Poppins';
+  color: var(--ifm-color-title);
+}
+
+.cardTitle:hover::after {
+  width: 100%;
+}
+
+.cardHeader {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.cardHeader p {
+  margin: 0;
+  font-size: 18px;
+}
+
+@media (max-width: 550px) {
+  .cards:hover .cardTitle{
+    font-size: 19px;
+  }
+}
+
+
+.featureSvg {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+}
+
+.cardDescription {
+  font-family: 'Roboto';
+  margin-left: 40px;
+  width: 90%;
+  color: var(--ifm-color-description);
+}
+
+.cardLink {
+  margin-left: 40px;
+  font-family: 'Roboto';
+  text-decoration: none;
+  font-size: 16px;
+}
