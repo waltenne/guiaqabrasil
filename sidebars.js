@@ -27,7 +27,10 @@ const sidebars = {
             id: 'modulos/conceitos/conceitos',
           },
           collapsed: true,
-          items: []
+          items: [
+            "modulos/conceitos/estrategia/estrategia",
+            "modulos/conceitos/tipos/tipos",
+          ]
         },
       ],
     },
